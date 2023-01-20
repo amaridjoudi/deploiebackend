@@ -2,10 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 
-const lien = 'deploiebackend-pp10q1zut-amaridjoudi.vercel.app'
 
-router.get('/lien', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/year', function(req, res) {
+
+  const date = new Date();
+  res.json({year: Date.getFullYear()})
 });
 
 module.exports = router;
