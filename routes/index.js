@@ -1,8 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+
+const lien = 'deploiebackend-pp10q1zut-amaridjoudi.vercel.app'
+
+router.get('/lien', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
